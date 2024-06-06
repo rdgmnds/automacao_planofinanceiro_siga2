@@ -5,7 +5,8 @@
 ### Principais tecnologias utilizadas
 1. Python como linguagem;
 2. PlayWright para automação web;
-3. Openpyxl para manipular Excel.
+3. Openpyxl para manipular Excel;
+4. Streamlit para interface do usuário.
 
 ### Objetivos da automação
 1. Economizar tempo na geração de relatórios;
