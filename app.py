@@ -1,11 +1,6 @@
 import streamlit as st
 import subprocess
 import os
-import sys
-from playwright.sync_api import sync_playwright, TimeoutError
-import openpyxl
-from pathlib import Path
-import wget
 
 st.set_page_config(
     page_title="Automação SIGA"
