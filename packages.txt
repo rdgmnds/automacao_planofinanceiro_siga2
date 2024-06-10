@@ -1,0 +1,5 @@
+build-essential
+pkg-config
+default-libplaywright-dev
+default-libopenpyxl-dev
+default-libstreamlit-dev
