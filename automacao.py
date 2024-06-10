@@ -1,4 +1,5 @@
 import sys
+import playwright
 from playwright.sync_api import sync_playwright, TimeoutError
 import openpyxl
 import os
@@ -50,7 +51,7 @@ def automacao(caminho_arquivo):
                     celula_aluno = cell.offset(row=0, column=1).value
                     nome_aluno = str(celula_aluno).upper()
                     nome_arquivo = f'{nome_aluno} - {cell.value.replace("/", "_")}.xls'
-                    caminho_download = os.path.join('F:\downloads', nome_arquivo)
+                    caminho_download = os.path.join(r'F:\downloads', nome_arquivo)
                     download.save_as(caminho_download)
 
                 except TimeoutError:
