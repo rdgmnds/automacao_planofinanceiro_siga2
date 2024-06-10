@@ -1,8 +1,4 @@
 streamlit
-subprocess
-os
-sys
 playwright
 openpyxl
-pathlib
 wget
