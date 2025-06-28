@@ -5,6 +5,7 @@ import openpyxl
 import os
 from pathlib import Path
 import wget
+from dotenv import load_dotenv
 
 def automacao(caminho_arquivo):
 
@@ -17,8 +18,8 @@ def automacao(caminho_arquivo):
         pagina.goto('https://www6.fgv.br/tic/identitymanager/unifiedlogon?id=eb1e7422-2d0f-45a2-ab02-f49bd82c8e8d&returnurl=https://sigaiwi.fgv.br/acad/hub/account/identitymanagerlogin?token=')
 
         # Logar no SIGA
-        pagina.wait_for_selector('#user').fill('rodrigo.vasconcelos')
-        pagina.wait_for_selector('#password').fill('Rdg#2024')
+        pagina.wait_for_selector('#user').fill(os.getenv("usuario"))
+        pagina.wait_for_selector('#password').fill(os.getenv("senha"))
         pagina.keyboard.press('Enter')
 
         # Acessar o menu
